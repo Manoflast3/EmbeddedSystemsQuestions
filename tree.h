@@ -25,6 +25,7 @@
 
 using namespace std;
 
-TreeNode{
+typedef struct TreeNode{
     int data; 
-}
+    int * left, right; 
+}TreeNode;
