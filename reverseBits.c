@@ -25,8 +25,23 @@
 
 using namespace std;
 
-typedef struct TreeNode{
-    int data; 
-    int * left, right; 
-}TreeNode;
+// Code here
 
+A[64]
+
+void reversebits(long x) {
+    int bitmask = 0xFFFF;
+    int wordSize = 16; 
+    return A[bitmask & (x>>(3*wordSize))] << (3*wordSize) + 
+           A[bitmask & (x>>(2*wordSize))] << (2*wordSize) +
+           A[bitmask & (x>>(wordSize))] << (wordSize) + 
+           A[bitmask & x];
+}
+
+
+
+int main() {
+    // for testing
+
+    return 0; 
+}
